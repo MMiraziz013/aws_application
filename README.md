@@ -54,7 +54,7 @@ pip install flask mysql-connector-python
     git clone <your_github_link>
     cd project
     ``` 
-* Opened the project and installed all dependencies
+* Opened the project, created and activated venv, and installed all dependencies.
 ### 5. AWS Hosting
 * Deployed the Flask app. 
 * Also set up necessary security group rules to allow HTTP traffic on port 5000 if did not before.
