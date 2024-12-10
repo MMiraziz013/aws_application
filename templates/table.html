@@ -9,17 +9,23 @@
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f9;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center all content horizontally */
+            text-align: center; /* Center text inside elements */
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #333;
         }
 
         table {
             border-collapse: collapse;
             width: 80%;
-            margin: 20px auto;
+            margin: 0 auto 20px auto; /* Add space below the table */
             background: #fff;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
@@ -57,30 +63,57 @@
             text-transform: uppercase;
             font-size: 14px;
         }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-top: 10px; /* Add spacing above the button */
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
+    <h1>My University Schedule</h1>
     <table>
         <thead>
         <tr>
-            <th>#</th>
             <th>Course Name</th>
             <th>Course Time</th>
             <th>Course Day</th>
             <th>Instructor</th>
+            <th>Difficulty</th>
         </tr>
         </thead>
         <tbody>
         {% for row in table_data %}
-            <tr>
-                <td>{{ loop.index }}</td>
-                <td>{{ row[1] }}</td>
-                <td>{{ row[2] }}</td>
-                <td>{{ row[3] }}</td>
-                <td>{{ row[4] }}</td>
-            </tr>
+        <tr>
+            <td>{{ row[1] }}</td>
+            <td>{{ row[2] }}</td>
+            <td>{{ row[3] }}</td>
+            <td>{{ row[4] }}</td>
+            <td>{{ row[5] }}</td>
+        </tr>
         {% endfor %}
         </tbody>
     </table>
+    <button onclick="unsort()">Unsort</button>
+    <button onclick="sortTable()">Sort by Difficulty</button>
+
+    <script>
+        function sortTable() {
+            window.location.href = "/sort_by_difficulty";
+        }
+	function unsort() {
+	    window.location.href = "/unsort";
+	}
+    </script>
 </body>
 </html>
