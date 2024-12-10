@@ -82,7 +82,7 @@ Displays the course schedule in a table format.
 ![image](https://github.com/user-attachments/assets/cbec6901-a951-4ea0-a268-2cca6fe8c344)
 
 
-Displays the courses sorted by difficulty (e.g., Undergraduate first, followed by Graduate).
+Displays the courses sorted by difficulty (e.g., Graduate first, followed by Undergraduate).
 
 ## How to Run the Application without creating it yourself (may not work if my server is down*)
 
