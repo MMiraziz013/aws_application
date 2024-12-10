@@ -71,12 +71,15 @@ pip install flask mysql-connector-python
 
 ##### 1. Home Page
 
+![image](https://github.com/user-attachments/assets/008fa1eb-0a4b-430e-a6c0-a8c6f47a9ac3)
 
 
 Displays the course schedule in a table format.
 
 
 ##### 2. Sorted by Difficulty
+
+![image](https://github.com/user-attachments/assets/cbec6901-a951-4ea0-a268-2cca6fe8c344)
 
 
 Displays the courses sorted by difficulty (e.g., Undergraduate first, followed by Graduate).
